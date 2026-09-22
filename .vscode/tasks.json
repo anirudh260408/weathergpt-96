@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "npm: dev (Start Development Server)",
+      "detail": "Runs tsx server.ts and starts local development server on port 3000",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": ["$tsc"],
+      "label": "npm: build (Production Build)",
+      "detail": "Builds frontend bundle and backend bundle into dist/"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": ["$tsc"],
+      "label": "npm: lint (TypeScript Typecheck)",
+      "detail": "Runs tsc --noEmit to verify types"
+    }
+  ]
+}

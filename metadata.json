@@ -1,0 +1,10 @@
+{
+  "name": "WeatherGPT",
+  "description": "AI Weather Alert, Assistance \u0026 Safety Agent providing real-time GPS meteorological intelligence, severe weather alerts, and Gemini AI contextual advice.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "User": {
+      "collection": "users",
+      "fields": {
+        "uid": { "type": "string", "description": "Unique Firebase Authentication UID" },
+        "email": { "type": "string", "description": "User email address" },
+        "name": { "type": "string", "description": "Display name of the user" },
+        "role": { "type": "string", "description": "User permission role, default user" },
+        "preferences": {
+          "type": "map",
+          "description": "User preferences including temperature unit, alerts, answer style",
+          "properties": {
+            "unit": { "type": "string", "description": "Temperature unit: C or F" },
+            "theme": { "type": "string", "description": "Theme: dark or light" },
+            "alertsEnabled": { "type": "boolean", "description": "Whether severe alerts are enabled" },
+            "answerStyle": { "type": "string", "description": "AI response style preference" },
+            "defaultLocation": { "type": "string", "description": "Default city name" }
+          }
+        },
+        "savedLocations": {
+          "type": "array",
+          "description": "List of user-saved custom weather locations"
+        },
+        "security": {
+          "type": "map",
+          "description": "User 2FA and security settings"
+        },
+        "createdAt": { "type": "string", "description": "ISO timestamp of creation" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update" }
+      }
+    }
+  }
+}
